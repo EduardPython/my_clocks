@@ -13,7 +13,8 @@ def create_clock():
     window.configure(bg="black")  # Set background color to black
 
     # Create a canvas for the clock
-    canvas = tk.Canvas(window, width=400, height=400, bg="black", highlightthickness=0)
+    canvas = tk.Canvas(window, width=400, height=400, bg="black",
+                       highlightthickness=0)
     canvas.pack()
 
     # Start updating the clock
@@ -64,8 +65,9 @@ def draw_clock_face(canvas):
     center_y = 200
 
     # Draw the outer circle of the clock face
-    canvas.create_oval(center_x - radius, center_y - radius, center_x + radius,
-                    center_y + radius, outline="#ECECEC", width=1, fill="black")
+    canvas.create_oval(center_x - radius, center_y - radius,
+                       center_x + radius, center_y + radius,
+                       outline="#ECECEC", width=1, fill="black")
 
 
 def draw_hour_marks(canvas):
